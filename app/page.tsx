@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Vite + React + Vercel URL: {vcURL}</h1>
+      <h1>Vite + React + leggo + Vercel URL: {vcURL}</h1>
       <div className="card">
         <button type="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
