@@ -3,11 +3,11 @@ import { useState } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(0)
-  const vcURL = process.env.NEXT_PUBLIC_VERCEL_URL
+  const testEnvVar = process.env.VERCEL_TARGET_ENV
 
   return (
     <>
-      <h1>Vite + React + test + Vercel URL: {vcURL}</h1>
+      <h1>Vite + React + test + Vercel URL: {testEnvVar}</h1>
       <div className="card">
         <button type="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
