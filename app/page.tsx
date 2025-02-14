@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(0)
-  const testEnvVar = process.env.NEXT_PUBLIC_VERCEL_ENV;
+  const testEnvVar = process.env.NEXT_PUBLIC_VERCEL_TARGET_ENV;
 
   return (
     <>
