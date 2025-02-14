@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 console.log('NEXT CONFIG')
-Object.keys(process.env)
-  .filter(key => key.startsWith("VERCEL"))
-  .forEach(key => console.log(`${key}: ${process.env[key]}`));
+for (const key of Object.keys(process.env).filter(key => key.startsWith("VERCEL"))) {
+  console.log(`${key}: ${process.env[key]}`)
+}
 
 const nextConfig: NextConfig = {
   /* config options here */
