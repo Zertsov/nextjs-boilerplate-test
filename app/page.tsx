@@ -1,14 +1,13 @@
 "use client"
 import { useState } from "react";
-import { VERCEL_TARGET_ENV } from "./constants";
 
 export default function Home() {
   const [count, setCount] = useState(0)
-  // const testEnvVar = VERCEL_TARGET_ENV
+  const testEnvVar = process.env.NEXT_PUBLIC_VERCEL_ENV;
 
   return (
     <>
-      <h1>Vite + React + test + Vercel URL: {VERCEL_TARGET_ENV}</h1>
+      <h1>Vite + React + test + Vercel URL: {testEnvVar}</h1>
       <div className="card">
         <button type="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
