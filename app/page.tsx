@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Vite + React + Vercel ENV VAR: {testEnvVar}</h1>
+      <h1>Vite + Vercel ENV VAR: {testEnvVar}</h1>
       <div className="card">
         <button type="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
