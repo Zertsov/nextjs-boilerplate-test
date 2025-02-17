@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 console.log('NEXT CONFIG')
-for (const key of Object.keys(process.env).filter(key => key.includes("ENV"))) {
+
+const filter = (key: string) => (key.startsWith("NEXT_PUBLIC") || key.startsWith("VERCEL")) && key.includes("ENV")
+for (const key of Object.keys(process.env).filter(filter)) {
   console.log(`${key}: ${process.env[key]}`)
 }
 
