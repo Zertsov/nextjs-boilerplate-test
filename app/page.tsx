@@ -14,9 +14,6 @@ export default function Home() {
         <button type="button" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/app/page.tsx</code> and save to test HMR
-        </p>
       </div>
     </>
   );
