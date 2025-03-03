@@ -13,17 +13,13 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        {
-          source: '/',
-          destination: 'https://www.youtube.com'
-        }
-      ],
-      afterFiles: [
+        // This will rewrite the base path to Youtube
         // {
         //   source: '/',
         //   destination: 'https://www.youtube.com'
         // }
       ],
+      afterFiles: [],
       fallback: []
     }
   }

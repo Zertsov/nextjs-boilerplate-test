@@ -2,10 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "(/?)",
-      "destination": "https://www.google.com"
-    },
-    {
       "source": "/test",
       "destination": "https://www.google.com"
     }
