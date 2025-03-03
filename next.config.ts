@@ -11,13 +11,16 @@ for (const key of Object.keys(process.env).filter(filter)) {
 
 const nextConfig: NextConfig = {
   async rewrites() {
-    // return []
-    return [
-      {
-        source: '/',
-        destination: 'https://www.reddit.com'
-      }
-    ]
+    return {
+      beforeFiles: [
+        {
+          source: '/',
+          destination: 'https://www.reddit.com'
+        }
+      ],
+      afterFiles: [],
+      fallback: []
+    }
   }
 };
 
