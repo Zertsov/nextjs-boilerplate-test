@@ -13,16 +13,16 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        // {
-        //   source: '/',
-        //   destination: 'https://www.reddit.com'
-        // }
-      ],
-      afterFiles: [
         {
           source: '/',
           destination: 'https://www.youtube.com'
         }
+      ],
+      afterFiles: [
+        // {
+        //   source: '/',
+        //   destination: 'https://www.youtube.com'
+        // }
       ],
       fallback: []
     }
