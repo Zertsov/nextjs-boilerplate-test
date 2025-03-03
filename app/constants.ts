@@ -1,0 +1,1 @@
+export const VERCEL_TARGET_ENV = process.env.NEXT_PUBLIC_VERCEL_TARGET_ENV
