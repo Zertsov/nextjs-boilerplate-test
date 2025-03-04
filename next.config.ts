@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 
+console.log('-----------')
 console.log('NEXT CONFIG')
 console.log('-----------')
 console.log()
