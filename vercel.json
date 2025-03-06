@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "https://www.reddit.com"
+      "destination": "https://voz.dev/about"
     },
     {
       "source": "/test",
