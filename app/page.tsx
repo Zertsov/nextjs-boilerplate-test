@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function Home() {
   const [count, setCount] = useState(0)
   const testEnvVar = process.env.NEXT_PUBLIC_VERCEL_DEPLOYMENT_ID;
+  console.log('here');
 
   return (
     <>
